@@ -1,0 +1,60 @@
+:root {
+    --bs-primary: #e67e22;
+    --bs-body-font-family: 'Quicksand', sans-serif;
+    --bs-body-bg: #fdfefe;
+}
+
+body {
+    font-family: var(--bs-body-font-family);
+    background-color: var(--bs-body-bg);
+}
+
+.btn-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+.btn-primary:hover {
+    background-color: #d35400;
+    border-color: #d35400;
+}
+
+.text-primary {
+    color: var(--bs-primary) !important;
+}
+.bg-primary {
+    background-color: var(--bs-primary) !important;
+}
+
+.list-group-item.active {
+    background-color: var(--bs-primary) !important;
+    border-color: var(--bs-primary) !important;
+}
+
+.carousel-item img {
+    height: 480px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 300px;
+    }
+}
+
+
+.accordion-button:not(.collapsed) {
+    background-color: rgba(230, 126, 34, 0.08) !important;
+    color: var(--bs-primary) !important;
+}
+.accordion-button:focus {
+    box-shadow: 0 0 0 0.25rem rgba(230, 126, 34, 0.25) !important;
+}
+
+.nav-tabs .nav-link.active {
+    color: var(--bs-primary) !important;
+    border-color: #dee2e6 #dee2e6 #fff !important;
+    font-weight: 700;
+}
+.nav-tabs .nav-link {
+    color: #6c757d;
+}
